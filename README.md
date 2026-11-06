@@ -66,6 +66,17 @@ They check **structure**, not quality: they catch a missing section, an unwritte
 
 When an exercise is done, commit and push, so your work is on GitHub and CI has run on it. Then ask the assistant to check your work in the room. They go through the exercise page's **What the assistant checks** list with you, at your codespace, and either accept the exercise or tell you exactly what is still missing.
 
+## Seeded Data
+
+When running `npm start`, migrations and seed data are automatically executed. The database includes:
+- **Club:** Coding Club
+- **Seeded Accounts (Password for both: `Password123!`):**
+  - Organizer: `organizer@example.com` (Role: organizer)
+  - Member: `member@example.com` (Role: member)
+- **Events:**
+  - 3 future events (Node.js Intro Workshop, Advanced Database Design, Hackathon Kickoff)
+  - 1 past event (Past Meetup: Git Basics)
+
 ## Save your free quota
 
 Stop the codespace when you finish (**Code → Codespaces → … → Stop codespace**) and delete codespaces you no longer need.

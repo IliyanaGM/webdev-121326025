@@ -1,14 +1,20 @@
 {
   "name": "webdev-121326025",
   "version": "1.0.0",
-  "description": "This repository is your workspace for the whole course: Exercise 1 in `mcp-server/`, and your project (Exercises 2–5) in the rest of it. Everything runs in your browser through GitHub Codespaces, so nothing needs to be installed on your laptop.",
-  "main": "index.js",
-  "directories": {
-    "doc": "docs"
-  },
+  "description": "Club Events web app for a student club",
+  "main": "src/server.js",
+  "type": "module",
   "scripts": {
     "test": "node mcp-server/check.mjs -- npm run --silent mcp",
-    "mcp": "node mcp-server/server.js"
+    "mcp": "node mcp-server/server.js",
+    "start": "node src/server.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "connect-pg-simple": "^10.0.0",
+    "express": "^4.21.2",
+    "express-session": "^1.18.1",
+    "pg": "^8.13.1"
   },
   "repository": {
     "type": "git",
